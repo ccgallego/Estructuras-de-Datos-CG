@@ -5,8 +5,12 @@
  */
 package estructurasdedatos;
 
+import estructuradedatos.estructurapila.Pila;
+import estructurasdedatos.estructuralistascirculares.ListasCirculares;
 import estructurasdedatos.estructuraobjeto.Persona;
 import estructurasdedatos.estructuraobjeto.Vehiculo;
+import estructurasdedatos.estructuraslistasenlazadas.Listadoble;
+import estructurasdedatos.estructuraslistasenlazadas.Listasimple;
 import estructurasdedatos.estructuravector.Matriz;
 import estructurasdedatos.estructuravector.Vector;
 
@@ -20,7 +24,9 @@ public class EstructurasDeDatos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        ////////////PRUEBA CLASE PERSONA//////////////
+        
        /* Persona juan = new Persona();
         juan.setNombre("Juan Alexis");
         juan.setDireccion("Cra 41 # 25-14");
@@ -31,7 +37,7 @@ public class EstructurasDeDatos {
                           + "Direccion:  " + juan.getDireccion()
                            + "\n" + "Telefono: " + juan.getTelefono());
         
-        
+        ///////////PRUEBA CLASE VEHICULO//////////////////
         Vehiculo chevrolet = new Vehiculo();
         
         chevrolet.setModelo("2004");
@@ -48,7 +54,7 @@ public class EstructurasDeDatos {
      */
 
 
-      
+  /////////////PRUEBA CLASE VECTOR///////////////////////
         
  /*Vector mivector = new Vector();
  
@@ -62,7 +68,9 @@ public class EstructurasDeDatos {
  mivector.buscar("felipe");
  */
 
- Matriz mimatriz = new Matriz();
+ /////////////  PRUEBA CLASE MATRIZ //////////////////////
+ 
+ /*Matriz mimatriz = new Matriz();
  
  mimatriz.crear(3, 3);
  
@@ -115,12 +123,56 @@ matrizB.insertar(2, 3, 0);
         System.out.println("MULTIPLICACION A*B");
         mimatriz.multiplicar(matrizB);
         System.out.println(" \n");
-        
-        
-        
-       
-        
-        
+        */
+ 
+ /////////PRUEBA LISTAS SIMPLES///////////////////
+ 
+ /*Listasimple lista1 = new Listasimple();
+ 
+ lista1.crearlista();
+ lista1.AgregarAlinicio(8);
+ lista1.AgregarAlinicio(6);
+ lista1.AgregarAlfinal(2);
+ lista1.AgregarAlinicio(-3);
+ lista1.listar();
+ lista1.eliminar(8);
+ lista1.listar();*/
+ 
+ /////////////////PRUEBA LISTAS DOBLEMENTE ENLAZADAS//////////////////
+ 
+ /*Listadoble lista2 = new Listadoble();
+ 
+ lista2.crearlistadoble();
+ lista2.insertarOrden(4);
+ lista2.listar();
+ lista2.insertarOrden(-3);
+ lista2.listar();
+ lista2.insertarOrden(6);
+ lista2.listar();
+ lista2.insertarOrden(7);
+ lista2.listar();
+ lista2.insertarOrden(8);
+ lista2.listar();
+ lista2.insertarOrden(0);
+ lista2.listar();
+ lista2.Eliminar(8);
+ lista2.listar();*/
+ 
+ VistaListasCircular vista = new VistaListasCircular();
+ vista.show();
+ 
+ ////////////////////PRUEBA DE ESTRUCUTA PILA//////////////////
+ 
+ /*Pila mipila = new Pila();
+
+ mipila.apilar("Cristian","Gallego","1112630610","19","sistemas");
+ mipila.apilar("David","Rangel","1112627876","22","dependiente");
+ mipila.listar();
+ System.out.println(" ");
+ mipila.desapilar();
+ mipila.listar();*/
+ 
+ 
    
 
 
